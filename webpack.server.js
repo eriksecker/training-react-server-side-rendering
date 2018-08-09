@@ -1,4 +1,4 @@
-const pa = require('path');
+const path = require('path');
 
 module.exports = {
 	// Inform webpack that we're building a bundle for nodeJs, rather than the browser
