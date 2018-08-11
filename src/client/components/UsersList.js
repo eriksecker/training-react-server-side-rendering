@@ -33,3 +33,7 @@ function mapStateToProps(state) {
 UsersList = connect(mapStateToProps, { fetchUsers })(UsersList);
 
 export default UsersList;
+
+export function loadData(store) {
+	return store.dispatch( fetchUsers() );
+}
