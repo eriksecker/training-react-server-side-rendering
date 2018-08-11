@@ -32,8 +32,11 @@ function mapStateToProps(state) {
 
 UsersListPage = connect(mapStateToProps, { fetchUsers })(UsersListPage);
 
-export default UsersListPage;
-
-export function loadData(store) {
+function loadData(store) {
 	return store.dispatch( fetchUsers() );
 }
+
+export default {
+	loadData,
+	component: UsersListPage,
+};
